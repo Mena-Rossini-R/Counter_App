@@ -4,8 +4,6 @@ const maxLength = 100;
 
 textarea.addEventListener("input", () => {
     const length = textarea.value.length;
-    const remaining = maxLength - length;
-
     counter.textContent = `${length} / ${maxLength}`;
 
     if (length > maxLength) {
